@@ -1,0 +1,41 @@
+{
+  "name": "blog-zombie-blog-microservice",
+  "version": "1.0.0",
+  "description": "BlogZombie's Blog Microservice",
+  "main": "index.js",
+  "scripts": {
+    "start-developing": "npx nodemon index.js",
+    "start": "node index.js",
+    "load-test": "k6 run load_test.js",
+    "test": "jest",
+    "deploy": "gcloud app deploy --version v1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matmill5/blog-zombie-blog-microservice.git"
+  },
+  "keywords": [
+    "blog",
+    "zombie",
+    "blogZombie",
+    "microservice"
+  ],
+  "author": "Matthew E. Miller",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/matmill5/blog-zombie-blog-microservice/issues"
+  },
+  "homepage": "https://github.com/matmill5/blog-zombie-blog-microservice#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.14",
+    "morgan": "^1.10.0"
+  },
+  "type": "module",
+  "devDependencies": {
+    "artillery": "^1.7.3",
+    "nodemon": "^2.0.7"
+  }
+}
